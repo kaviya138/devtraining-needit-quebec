@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedItTable" max_length="40" name="x_58872_needit_needittable" type="collection">
+        <element display="true" label="Category" mandatory="true" max_length="125" name="category" type="string"/>
+        <element label="Post" max_length="40" name="post" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New Calendar Date/Time" max_length="40" name="u_calendar_date_time_1" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Choice" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resource" sequence="0" value="human resource"/>
+                <element inactive_on_update="false" label="Facility" sequence="1" value="facility"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Date/Time" max_length="40" name="u_date_time_2" type="calendar_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="u_requested_for" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
